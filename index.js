@@ -30,10 +30,10 @@ var array = ["a", "b", "c", "d", "e", "f", "g", "h"];
 array.splice(3,3);
 console.log(array);
 
-DETERMINE UMA ARRAY
-ADICIONE O NUMERO 7
-REMOVA O NUMERO 4 E 5 
-DETERMINE O NOVO TAMANHO DO ARRAY
+//DETERMINE UMA ARRAY
+//ADICIONE O NUMERO 7
+//REMOVA O NUMERO 4 E 5 
+//DETERMINE O NOVO TAMANHO DO ARRAY
 
 *
 
@@ -57,11 +57,91 @@ funcition imprimirOlaMundo(){
     console.log("Olá Mundo!");
 }
 
-*/
+*
 
 function nomechamar(nome){
 console.log(`Olá ${nome}`)
 }
 
-nomechamar("Arthur")
+nomechamar("Arthur") 
+
+*
+
+const a = 1;
+
+function imprimeVariavel(){
+    const b = 2;
+    console.log('Variavel a', a);
+    console.log('Variavel b', b);
+}
+
+ imprimeVariavel();
+
+ console.log('Variavel a', a);
+ console.log('Variavel b', b);
+
+ RETORNO --------------------------------------------------------------------------------------------
+ *
+ 
+ function calculaArea(altura, largura){
+    const area = altura * largura;
+    return area;
+ }
+
+ //Atribui retorno à uma variável
+ const areaCalculada = calculaArea(2,3);
+
+ //imprimir o retorno ao console
+ console.log(calculaArea(2,3));
+
+ ATIVIDADE ( SOMAR AO INVES DE MULTIPLICAR) --------------------------------------------------------------
+
+function numerosRecebidos(numeroUm, numeroDois){
+    const resultado = numeroUm + numeroDois
+    return resultado;   
+
+}
+
+const resultadoCalculado = numerosRecebidos(8, 8);
+    console.log(numerosRecebidos(8,8));
+
+ARRAY E RETORNE ----------------------------------------------------------------------
+*
+
+function recebeArray(arrayDeNumeros = []){
+    return [(arrayDeNumeros.length)/2, (arrayDeNumeros[0])/2];
+}
+
+console.log(recebeArray([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+-------------------------------- JAVA MAIS PROFUNDO ----------------------------------------------
+
+EXERCICIO 2
+function pessoa(nome) {
+    console.log("Olá ", nome);
+}
+pessoa("Lucas")
+pessoa("Pedro")
+pessoa("Ramon")
+
+*/
+
+    let pessoas = function(nomedapessoa){
+        console.log(nomedapessoa);  
+}
+
+pessoas(prompt("Qual o seu nome?"));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
