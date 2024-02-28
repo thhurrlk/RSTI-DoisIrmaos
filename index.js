@@ -274,20 +274,116 @@ const professor = {
     --------------------------------------------------------------------------------*/
         //EXERCICIO
 
-        const pessoa = {
+       /*  const pessoa = {
 
-            nome: 'Maria',
+            nome: 'Arthur',
             idade: '15',
             genero: 'mulher',
             musica: 'funk',
             comidas: ['Churrasco', 'Strogonoff', 'Açaí', 'Frango Frito'],
             melhorAmiga: {
-                nomeDaAmiga: "Arthur",               
+                nomeDaAmiga: "Maria",               
                 idade: 17,
         
+            }
         }
 
-        console.log(`O nome da pessoa é ${pessoa.nome}`)
+        console.log(`O nome da pessoa é ${pessoa.nome} e suas comidas preferidas são ${pessoa.comidas} e seu melhor amigo se chama ${pessoa.melhorAmiga.nomeDaAmiga} e tem ${pessoa.melhorAmiga.idade} de idade.`)
+
+*/
+        //CORREÇÃO
+        
+        /* const pessoa = {
+            nome: 'Arthur',
+            idade: '15',
+            genero: 'mulher',
+            musica: 'funk',
+        };
+       
+        function exercicio4(objetoPessoa, arrayComidas, objetoMelhorAmigo){
+            var novoObjeto = {...objetoPessoa, comidasPreferidas: arrayComidas, melhorAmigo: objetoMelhorAmigo};
+
+            console.log(`O nome da pessoa é ${novoObjeto.nome} e suas comidas preferidas são ${novoObjeto.comidasPreferidas[0]}, ${novoObjeto.comidasPreferidas[1]}, ${novoObjeto.comidasPreferidas[2]}, seu melhor amigo se chama ${novoObjeto.melhorAmigo.nome} e tem ${novoObjeto.melhorAmigo.idade} anos.`);
+
+        }
+
+        exercicio4(pessoa, ["Arroz", "Feijão", "Carne"], {nome: "João", idade:10}); */
+
+
+        //CONDICIONAIS ---------------------------------------------------------------------------------------
+
+        //EXEMPLO
+
+        /* let condicao1 = true;
+            if (condicao1){
+            // Como o valor da condição é true, o código desse bloco é executado     
+                console.log('Entrei no if 1!');
+        }
+
+        let condicao2 = false;
+         if(condicao2){
+            // Como o valor da condição é false, o código desse bloco NÃO é executado
+                console.log('Entrei no if 2!');
+        } */
+
+        //EXERCICIO CONDICIONAIS  -----------------------------------------------------------------------
+
+       /*  function numeros(num1, num2){
+                if(num1 === num2) 
+                console.log('Iguais')
+            else(console.log('Diferentes'))
+        } 
+    numeros(prompt("Digite um número para alocar o num1"),prompt("Digite outro número para entrar como num2")); */
+
+        //EXERCICIO CONDICIONAIS 2 ---------------------------------------------------------------------------------
+        
+        /* function idade(nome, idadeAtual){
+            var idadePermitida = 18
+            if(idadeAtual <= 18){
+                console.log(`${nome}, você pode dirigir!`);
+            }
+            else{
+                console.log(`${nome}, você não pode dirigir!`);
+            }
+        }
+
+        idade(prompt("Escreva seu nome:"), (prompt("Escreva sua idade:")));
+ */
+
+        //1ELSE EXEMPLO ---------------------------------
+
+        /* let condicao = false
+    
+        if (condicao){
+            console.log('Entre no if!')
+       } else {
+        console.log('Entrei no else!')
+       } 
+
+       EXERCICIO ELSE 2 ----------------------------*/
+
+       /* function numeros(num1, num2){
+        if(num1 === num2) 
+            return `Iguais`;
+        else
+            return `Diferentes`;
+} 
+    console.log(numeros(prompt("Digite um número para alocar o num1"),prompt("Digite outro número para entrar como num2")));
+ */
+
+
+    let condicao1 = false
+    let condicao2 = true
+
+    if (condicao1){
+        console.log('Entrei no if1 !')
+    }
+    else {
+        if (condicao2) {
+            console.log('Entrei no if2!')
+        }
+    }
+
 
 
 
