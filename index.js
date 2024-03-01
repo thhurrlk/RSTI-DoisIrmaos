@@ -371,7 +371,7 @@ const professor = {
     console.log(numeros(prompt("Digite um número para alocar o num1"),prompt("Digite outro número para entrar como num2")));
  */
 
-
+/* 
     let condicao1 = false
     let condicao2 = true
 
@@ -384,7 +384,207 @@ const professor = {
         }
     }
 
+ */
 
+    //EXERCICIO ELSE E IF 3 -------------------------------------------------------
+
+    /* function conferirNumeros(num1, num2){
+
+        if (num1 === num2)  {
+            console.log("O número ", num1, "é maior que ",num2,".");
+        }
+        else{
+            if (num1 > num2) {
+                console.log("O número", num1, "é maior que ", num2,".");
+            }
+        }
+        else{
+            if (num1 < num2) {
+                console.log("O número ", num1, "é menor que o ",num2,".");
+            }
+        }
+            else {
+                console.log("O número ", num1, "é menor que ",num2,".");
+            }
+         } */
+
+        
+       /*  function numeros(num1, num2){
+            
+            if(num1 > num2){
+                return`O ${num1} é maior que o ${num2}`;
+            }else if(num1 < num2){
+                    return`O ${num1} é menor que o ${num2}`;
+                }else {
+                    return`Os dois números são iguais: ${num1}.`;
+                }
+            }
+            console.log */
+
+
+// ----------------------------------------------------------------- SWITCH CASE --------------------------
+// SEM SWITCH CASE =
+            /* let paisDeOrigem
+            if (paisDeOrigem === 'Brasil'){
+                console.log('Brasileiro')
+            } else if (paisDeOrigem === 'EUA'){
+                console.log('Norte Americano')
+            }else if (paisDeOrigem === 'Inglaterra'){
+                console.log('Inglês')
+            }else if (paisDeOrigem === 'França'){
+                console.log('Frânces')
+            }else if (paisDeOrigem === 'Itália'){
+                console.log('Italiano')
+            }else if (paisDeOrigem === 'Canadá'){
+                console.log('Canadense')
+            }else {
+                console.log('Nacionalidade não encontrada')
+            } */
+
+// COM SWITCH CASE = 
+
+           /*  let paisDeOrigem
+                switch (paisDeOrigem){
+                case 'Brasil':
+                    console.log('Brasileiro')
+                    break  
+                case 'EUA':
+                    console.log('Norte Americano')
+                    break
+                case 'Inglaterra':
+                    console.log('Inglês')
+                    break
+                default:
+                    console.log('Nacionalidade não encontrada')
+                    break
+                
+                } */
+
+// EXERCICIO SWITCH CASE
+
+              /*   function pokemonSelecionado(pokemon){
+                    switch (pokemon){
+                    case 'bulbasauro':
+                            console.log('Planta Veneno')
+                        break
+                    case 'pikachu':
+                            console.log('Relampago')
+                        break
+                    case 'charmander':
+                            console.log('Fogo')
+                        break
+                    case 'squirtle':
+                            console.log('Água')
+                        break
+                    default:
+                        console.log('Nenhum Pokémon foi escolhido para a sua jornada!')
+                    }
+                }
+            console.log(pokemonSelecionado(prompt("Selecione um dos quatros pokémon para iniciar sua jornada: \n 1- Bulbasauro \n 2- Pikachu \n 3- Charmander \n 4- Squirtle"))); 
+   ----------------------------------------------------------------------------------------------------     */
+// OPERADORES LOGICOS APLICANDO DE UM JEITO UTIL ( && = AND , ||= OR , != NOT);
+
+// EXEMPLO:
+
+               /*  let condicao1 = true
+                let condicao2 = false
+                
+                if ( condicao1 && condicao2) {
+                    // Entre aqui se ambas forem true
+                }
+
+                if (!condicao1){
+                    // Entra aqui se condicao1 for false
+                } */
+
+// EXERCICIO 1:
+                /* var podeEntrar = false
+                var pessoa = {
+                    
+                    idade:prompt("Qual sua idade?"),
+                    ensinoMedio:prompt("Você concluiu o ensino medio?"),
+                    estaCursando:prompt("Você está cursando outra faculdade?")
+
+                }
+
+            if(pessoa.ensinoMedio === "sim"){
+                    pessoa.ensinoMedio = true;}
+            else{pessoa.ensinoMedio = false;}
+            
+            if(pessoa.estaCursando === "sim"){
+                    pessoa.estaCursando = false;}
+            else{pessoa.estaCursando = true;}
+
+            if(pessoa.idade >= 18 ){
+                    podeEntrar = true;}
+            else if(pessoa.idade < 18){
+                    podeEntrar = false;}
+            
+            if(pessoa.ensinoMedio){
+                podeEntrar = true;}
+            else{podeEntrar = false;}
+            
+            if(pessoa.estaCursando){
+                podeEntrar = true;}
+            else{podeEntrar = false;}
+
+            if (podeEntrar) {
+                console.log('Você pode entrar na nossa faculdade!')
+            } else {console.log('Você não tem permissao para entrar na nossa faculdade')} */
+
+// EXERCICIO 2: CALCULADORA SIMPLES
+
+
+            
+            function calculadoraNumeros(num1, operacao, num2){
+            
+                if(operacao === "soma"){
+                    return num1+num2
+                }
+                else if(operacao === "subtracao"){
+                    return num1-num2
+                }
+                else if(operacao === "multiplicacao"){
+                    return num1*num2
+                }
+                else if(operacao === "divisao"){
+                    return num1/num2
+                }
+                else{return`invalido, digite novamente!`} 
+            }
+                    console.log(
+                        calculadoraNumeros(
+                            Number(prompt("Digite o numero desejado: ")),
+                            prompt("Digite a operação desejada: \n soma \n subtracao \n multiplicacao \n divisao"),
+                            Number(prompt("Digite o segundo numero desejado: "))));
+
+                    
+
+          
+
+
+
+
+
+                
+
+                
+
+
+                    
+                
+
+
+
+            
+        
+
+            
+
+        
+    
+        
+    
 
 
 
