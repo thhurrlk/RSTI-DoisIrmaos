@@ -532,11 +532,11 @@ const professor = {
                 console.log('Você pode entrar na nossa faculdade!')
             } else {console.log('Você não tem permissao para entrar na nossa faculdade')} */
 
-// EXERCICIO 2: CALCULADORA SIMPLES
+// EXERCICIO 2.1: CALCULADORA SIMPLES
 
 
             
-            function calculadoraNumeros(num1, operacao, num2){
+       /*      function calculadoraNumeros(num1, operacao, num2){
             
                 if(operacao === "soma"){
                     return num1+num2
@@ -556,7 +556,65 @@ const professor = {
                         calculadoraNumeros(
                             Number(prompt("Digite o numero desejado: ")),
                             prompt("Digite a operação desejada: \n soma \n subtracao \n multiplicacao \n divisao"),
-                            Number(prompt("Digite o segundo numero desejado: "))));
+                            Number(prompt("Digite o segundo numero desejado: ")))); */
+
+//EXERCICIO 2.2 =
+/* 
+                    
+                    function calcularmedia (array = [prompt("notaum"),prompt("notadois"),prompt("notatres")]){
+                        
+
+                    }
+ */
+//EXERCICIO 2.3 = 
+
+//TERMINAR MAIS TARDE!!
+
+//AULA DIA 06/03/24 ---------------------------------------------------------------------------------
+
+             /*    function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
+                    if(idade >= 18){
+                        if(ensinoMedio === "sim"){
+                            if(faculdade === "sim"){
+                                return "Você pode entrar na faculdade";
+                            }
+                        }
+                    }
+                    else{return " voce nao pode entrar na faculdade";}
+                }
+
+                console.log(
+                    podeEntrarNaFaculdade(
+                        prompt("Voce concluiu o ensino medio?"),
+                        Number(prompt("qual sua idade?")),
+                        prompt("Voce ja estuda em uma faculdade?")
+                    )
+                ); */
+
+// CODIGO PROFESSOR 
+
+function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
+    if(ensinoMedio === "sim" || ensinoMedio === "Sim")
+    {ensinoMedio =  true;}else{faculdade = false;}
+
+    if(faculdade === "sim" || faculdade === "Sim")
+       {faculdade = true;}else{faculdade = false;}
+
+       if(idade >= 18 && ensinoMedio && faculdade){
+        return "Voce pode entrar na faculdade";
+       }
+       else{return "voce nao pode entrar na faculdade";}
+}
+    console.log(
+    podeEntrarNaFaculdade(
+        prompt("Voce concluiu o ensino medio?"),
+        Number(prompt("qual sua idade?")),
+        prompt("Voce ja estuda em uma faculdade?")
+        )
+    );
+        
+    
+
 
                     
 
