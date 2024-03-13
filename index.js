@@ -532,11 +532,13 @@ const professor = {
                 console.log('Você pode entrar na nossa faculdade!')
             } else {console.log('Você não tem permissao para entrar na nossa faculdade')} */
 
-// EXERCICIO 2.1: CALCULADORA SIMPLES
+// EXERCICIO 2.1: 
+ //SIMPLES
 
 
             
-       /*      function calculadoraNumeros(num1, operacao, num2){
+       /*      function 
+       Numeros(num1, operacao, num2){
             
                 if(operacao === "soma"){
                     return num1+num2
@@ -553,7 +555,8 @@ const professor = {
                 else{return`invalido, digite novamente!`} 
             }
                     console.log(
-                        calculadoraNumeros(
+                        
+                        Numeros(
                             Number(prompt("Digite o numero desejado: ")),
                             prompt("Digite a operação desejada: \n soma \n subtracao \n multiplicacao \n divisao"),
                             Number(prompt("Digite o segundo numero desejado: ")))); */
@@ -593,7 +596,7 @@ const professor = {
 
 // CODIGO PROFESSOR 
 
-function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
+/* function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
     if(ensinoMedio === "sim" || ensinoMedio === "Sim")
     {ensinoMedio =  true;}else{faculdade = false;}
 
@@ -612,7 +615,177 @@ function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
         prompt("Voce ja estuda em uma faculdade?")
         )
     );
+
+      */
+
+     /*    let i = 0      
+
+        while ( i < 10){
+            console.log(i)
+
+            i++
+        }
+ */
+
+      /*   let estomago = 0;
+
+        while (estomago < 100) {
+            console.log("Quero comer mais coxinhas");
+            estomago = estomago + 10;
+        }
+ */
+
+        // EXERCICIO ------------------------------------------------------------
+
+        //NESSE SISTEMA O USUARIO VAI TER QUE INSERIR VARIOS NUMEROS
+        //QUANDO DIGITAR O NUMERO 0 DEVEMOS PARAR DE SOLICITAR NOVOS NUMEROS ]
+        // EXEMPLO 10, 3 , 50, 7, 0 O RESULTADO TEM QUE SER 70
+
+        //ERRADO ------------------------------- :(
+
+    /* let i = 0;
+    
+    let numero = Number(prompt("Digite um número (ou 0 para encerrar):"));
+
+    while(numero !== 0){
+        i += numero;
+
+        Number(prompt("Digite 0 se quiser encerrar ou outros numeros se quiser continuar"));
+
+    }
+
+    console.log("A soma dos numeros é ",i); */
+
+    //------------------------------- CORRIGIDO
+
+   /*  function somarNumeros() {
+        let soma = 0;
+        let numero = 1;
+        while (numero !== 0){
+            numero = Number(prompt("Digite um número ( ou 0 para sair): "))
+            soma += numero;
+        }
+        console.log(`A soma dos números digitados é: ${soma}`);
+    }
+    somarNumeros();
+ */
+
+    // FOR
+/* 
+    for(let i = 0; i<10; i++){
         
+        console.log(i)
+    } */
+/* 
+    const numeros = [14, 67, 89, 15, 23]
+
+    for(let i = 0; i < 5; i++){
+        const elemento = numeros[i]
+        console.log(elemento) */
+   // }
+
+   //EXERCICIO CONST E ETC...
+
+ /*   const numeros = [11,15,18,14,12,13]
+   var maior=numeros[0];
+
+   for(let i = 1; i< numeros.length; i++){
+    if(numeros[i] > maior){ 
+    maior = numeros[i];}
+}
+    console.log("Maior número é ",maior); */
+    
+
+
+    function somarNumerosComArray(){
+        var numeros = [];
+        var numero = 1;
+
+    while (numero !== 0) {
+        numero = Number(prompt("Digite um numero ou 0 para sair"));
+        numeros.push(numero);       
+    }
+
+    var soma = numeros.reduce((acumulador,numero)=> acumulador+numero,0);
+    return(soma); 
+
+ } 
+
+    console.log("A soma dos números digitados é: ",somarNumerosComArray());
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+        
+    
+        
+    
+    
+        
+
+        
+
+
+       
+ 
+
     
 
 
