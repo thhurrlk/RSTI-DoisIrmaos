@@ -695,9 +695,9 @@ const professor = {
 }
     console.log("Maior número é ",maior); */
     
+//CODANDO O QUE O PROFESSOR TA FALANDO
 
-
-    function somarNumerosComArray(){
+   /*  function somarNumerosComArray(){
         var numeros = [];
         var numero = 1;
 
@@ -711,7 +711,18 @@ const professor = {
 
  } 
 
-    console.log("A soma dos números digitados é: ",somarNumerosComArray());
+    console.log("A soma dos números digitados é: ",somarNumerosComArray()); */
+
+    //ATIVIDADE PRA SEXTA - TRAZER ALGUM MATERIAL 
+
+// Link do curso https://www.cursoemvideo.com/cursos/ 
+
+// canais
+// 1- Jorge Clenio
+// 2- Adriana Saty
+// 3- Programação Web
+// 4- Gabriel Rangel - Fala, Corders!
+// 5- Rafaella Ballerini 
         
     
 
